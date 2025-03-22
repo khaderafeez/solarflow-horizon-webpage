@@ -7,19 +7,19 @@ import Footer from '../components/Footer';
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-drift-dark text-white overflow-x-hidden">
+    <main className="min-h-screen bg-drift-white text-drift-text overflow-x-hidden">
       <Hero />
       
       {/* About Section */}
-      <section id="about-section" className="py-24 bg-drift-dark">
+      <section id="about-section" className="py-24 bg-drift-white">
         <div className="drift-container">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2 animate-fade-in">
               <h2 className="section-heading text-gradient">About Drift Pure</h2>
-              <p className="text-lg text-white/80 mb-6">
+              <p className="text-lg text-drift-text-secondary mb-6">
                 Founded in 2020, Drift Pure is dedicated to solving the global water crisis through sustainable technology. Our mission is to make clean water accessible to communities worldwide while reducing environmental impact.
               </p>
-              <p className="text-lg text-white/80 mb-8">
+              <p className="text-lg text-drift-text-secondary mb-8">
                 Our revolutionary solar desalination technology uses the power of the sun to transform saltwater into fresh, drinkable water without the high energy costs and environmental damage of traditional methods.
               </p>
               <a href="/about" className="button-primary">

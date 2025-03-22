@@ -14,10 +14,10 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-drift-dark p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-drift-white p-4">
       <div className="text-center glass-card p-12 max-w-lg animate-fade-in">
         <h1 className="text-6xl font-bold mb-6 text-gradient">404</h1>
-        <p className="text-xl text-white/80 mb-8">
+        <p className="text-xl text-drift-text-secondary mb-8">
           The page you're looking for doesn't exist or has been moved.
         </p>
         <a 

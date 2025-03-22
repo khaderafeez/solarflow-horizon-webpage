@@ -29,9 +29,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-drift-dark">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-drift-white">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-radial from-drift-dark-accent to-drift-dark"></div>
+      <div className="absolute inset-0 bg-gradient-radial from-white to-gray-50"></div>
       
       {/* Animated Particles */}
       <div className="absolute inset-0">
@@ -45,7 +45,7 @@ const Hero = () => {
         className="drift-container relative z-10 text-center px-4 py-20 md:py-0"
       >
         <div className="inline-block mb-8 animate-fade-in">
-          <span className="inline-block px-4 py-1.5 rounded-full text-xs md:text-sm bg-white/10 backdrop-blur-sm border border-white/10 text-white/90">
+          <span className="inline-block px-4 py-1.5 rounded-full text-xs md:text-sm bg-drift-blue/10 border border-drift-blue/20 text-drift-text">
             Revolutionizing Water Purification
           </span>
         </div>
@@ -55,7 +55,7 @@ const Hero = () => {
           <span className="animate-fade-in-delay">Through Solar Innovation</span>
         </h1>
         
-        <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto animate-fade-in animate-delay-200">
+        <p className="mt-6 text-lg md:text-xl text-drift-text-secondary max-w-2xl mx-auto animate-fade-in animate-delay-200">
           Drift Pure harnesses the power of solar energy to create sustainable desalination technology that transforms saltwater into clean, drinkable water.
         </p>
         
@@ -73,7 +73,7 @@ const Hero = () => {
       <div className="absolute bottom-10 left-0 right-0 flex justify-center animate-pulse">
         <button 
           onClick={scrollToNextSection}
-          className="text-white/70 hover:text-white transition-colors focus:outline-none"
+          className="text-drift-text-secondary hover:text-drift-blue transition-colors focus:outline-none"
           aria-label="Scroll to next section"
         >
           <ChevronDown size={36} />

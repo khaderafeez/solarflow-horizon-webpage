@@ -26,11 +26,11 @@ const Technology = () => {
   ];
 
   return (
-    <section id="technology-section" className="py-24 bg-drift-dark-accent">
+    <section id="technology-section" className="py-24 bg-drift-card">
       <div className="drift-container">
         <div className="text-center mb-16">
           <h2 className="section-heading text-gradient">Our Technology</h2>
-          <p className="text-lg text-white/80 max-w-3xl mx-auto">
+          <p className="text-lg text-drift-text-secondary max-w-3xl mx-auto">
             Discover how our revolutionary solar desalination process works to deliver pure water with minimal environmental impact.
           </p>
         </div>
@@ -38,7 +38,7 @@ const Technology = () => {
         {/* Technology Process */}
         <div className="relative">
           {/* Center line for desktop */}
-          <div className="hidden md:block absolute left-1/2 top-8 bottom-8 w-0.5 bg-white/10 -translate-x-1/2"></div>
+          <div className="hidden md:block absolute left-1/2 top-8 bottom-8 w-0.5 bg-drift-border -translate-x-1/2"></div>
           
           <div className="space-y-12 md:space-y-0 relative">
             {steps.map((step, index) => (
@@ -49,14 +49,14 @@ const Technology = () => {
                 } mb-20`}
               >
                 {/* Process step for mobile */}
-                <div className="block md:hidden glass-card p-6 animate-fade-in">
+                <div className="block md:hidden glass-card p-6 animate-fade-in hover:shadow-lg transition-all duration-300">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center">
+                    <div className="h-12 w-12 rounded-full bg-drift-blue/10 flex items-center justify-center">
                       {step.icon}
                     </div>
                     <h3 className="text-xl font-semibold">{step.title}</h3>
                   </div>
-                  <p className="text-white/80">{step.description}</p>
+                  <p className="text-drift-text-secondary">{step.description}</p>
                 </div>
                 
                 {/* Process steps for desktop */}
@@ -64,7 +64,7 @@ const Technology = () => {
                   <div 
                     className={`glass-card p-6 ${
                       index % 2 === 0 ? 'mr-8' : 'ml-8'
-                    } animate-fade-in`}
+                    } animate-fade-in hover:shadow-lg transition-all duration-300 hover:-translate-y-1`}
                   >
                     <div className={`flex items-center gap-4 mb-4 ${
                       index % 2 === 0 ? 'justify-end' : 'justify-start'
@@ -72,11 +72,11 @@ const Technology = () => {
                       <div className={`${index % 2 === 0 ? 'order-first' : 'order-last'}`}>
                         <h3 className="text-xl font-semibold">{step.title}</h3>
                       </div>
-                      <div className="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center">
+                      <div className="h-12 w-12 rounded-full bg-drift-blue/10 flex items-center justify-center">
                         {step.icon}
                       </div>
                     </div>
-                    <p className="text-white/80">{step.description}</p>
+                    <p className="text-drift-text-secondary">{step.description}</p>
                   </div>
                 </div>
                 
