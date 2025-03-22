@@ -28,11 +28,11 @@ const Team = () => {
   ];
 
   return (
-    <section className="py-24 bg-drift-white">
+    <section className="py-24 bg-drift-dark">
       <div className="drift-container">
         <div className="text-center mb-16">
           <h2 className="section-heading text-gradient">Our Team</h2>
-          <p className="text-lg text-drift-text-secondary max-w-3xl mx-auto">
+          <p className="text-lg text-white/80 max-w-3xl mx-auto">
             Meet the innovative minds behind Drift Pure's revolutionary technology.
           </p>
         </div>
@@ -41,10 +41,10 @@ const Team = () => {
           {teamMembers.map((member, index) => (
             <div 
               key={index} 
-              className="glass-card p-6 flex flex-col items-center text-center animate-fade-in hover:shadow-lg hover:-translate-y-2 transition-all duration-300"
+              className="glass-card p-6 flex flex-col items-center text-center animate-fade-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="h-32 w-32 rounded-full bg-drift-blue/10 mb-6 overflow-hidden">
+              <div className="h-32 w-32 rounded-full bg-white/10 mb-6 overflow-hidden">
                 <img 
                   src={member.image} 
                   alt={member.name} 
@@ -53,7 +53,7 @@ const Team = () => {
               </div>
               <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
               <p className="text-sm text-drift-blue mb-4">{member.role}</p>
-              <p className="text-drift-text-secondary text-sm">{member.bio}</p>
+              <p className="text-white/80 text-sm">{member.bio}</p>
             </div>
           ))}
         </div>

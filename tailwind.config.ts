@@ -67,12 +67,6 @@ export default {
         "drift-dark-accent": "#1A1A1A",
         "drift-blue": "#33B1FF",
         "drift-blue-dark": "#2980B9",
-        "drift-white": "#FFFFFF",
-        "drift-text": "#403E43",
-        "drift-text-secondary": "#8A898C",
-        "drift-border": "#C8C8C9",
-        "drift-divider": "#F1F1F1",
-        "drift-card": "#F6F6F7",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -132,7 +126,7 @@ export default {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "hero-pattern":
-          "linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url('/images/solar-pattern.svg')",
+          "linear-gradient(to bottom, rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 1)), url('/images/solar-pattern.svg')",
       },
     },
   },
